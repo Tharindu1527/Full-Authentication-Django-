@@ -70,14 +70,22 @@ pip install -r requirements.txt
 5. Configure environment variables
 ```bash
 # .env
-DEBUG=True
-SECRET_KEY=your-secret-key
-DATABASE_URL=postgresql://user:password@localhost:5432/db_name
-AWS_ACCESS_KEY_ID=your-aws-access-key
-AWS_SECRET_ACCESS_KEY=your-aws-secret-key
-AWS_SES_REGION=your-aws-region
-GOOGLE_OAUTH_CLIENT_ID=your-google-client-id
-GOOGLE_OAUTH_CLIENT_SECRET=your-google-client-secret
+DEVELOPMENT_MODE = "True"
+DJANGO_SECRET_KEY = ""
+DEBUG = "True"
+AWS_SES_ACCESS_KEY_ID = ""
+AWS_SES_SECRET_ACCESS_KEY = ""
+AWS_SES_REGION_NAME = "us-east-1"
+AWS_SES_FROM_EMAIL = ""
+DOMAIN = "localhost:3000"
+AUTH_COOKIE_SECURE = False
+GOOGLE_AUTH_KEY =  
+GOOGLE_AUTH_SECRET_KEY = "
+DATABASE_NAME=
+DATABASE_USER=
+DATABASE_PASSWORD=
+DATABASE_HOST=
+DATABASE_PORT=
 ```
 
 6. Run migrations
@@ -100,13 +108,6 @@ cd frontend
 2. Install dependencies
 ```bash
 npm install
-```
-
-3. Configure environment variables
-```bash
-# .env.local
-NEXT_PUBLIC_API_URL=http://localhost:8000
-NEXT_PUBLIC_GOOGLE_CLIENT_ID=your-google-client-id
 ```
 
 4. Run the development server
