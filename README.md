@@ -117,17 +117,6 @@ npm run dev
 
 ## API Endpoints
 
-### Authentication Endpoints
-```
-POST /auth/users/ - Register new user
-POST /auth/jwt/create/ - Obtain JWT token
-POST /auth/jwt/refresh/ - Refresh JWT token
-POST /auth/users/reset_password/ - Reset password
-POST /auth/users/reset_password_confirm/ - Confirm password reset
-GET /auth/users/me/ - Get current user
-POST /auth/google/ - Google OAuth authentication
-```
-
 ## Postman Setup
 
 1. Import the provided Postman collection
@@ -145,21 +134,6 @@ Collection includes all API endpoints with example requests and responses.
 4. Create SMTP credentials
 5. Update environment variables
 
-## Project Structure
-
-```
-django-full-auth/
-├── backend/
-│   ├── accounts/          # Custom user model and authentication
-│   ├── core/              # Core functionality
-│   └── config/            # Project settings
-├── frontend/
-│   ├── pages/             # NextJS pages
-│   ├── components/        # React components
-│   └── services/          # API services
-└── docs/                  # Documentation
-```
-
 ## Security Features
 
 - JWT token authentication
@@ -167,54 +141,3 @@ django-full-auth/
 - Email verification
 - Protected API endpoints
 - CORS configuration
-- SSL/TLS support
-- Request rate limiting
-
-## Development
-
-### Running Tests
-```bash
-# Backend tests
-python manage.py test
-
-# Frontend tests
-npm run test
-```
-
-### Code Formatting
-```bash
-# Backend
-black .
-flake8
-
-# Frontend
-npm run lint
-```
-
-## Deployment
-
-1. Set up production environment variables
-2. Configure CORS settings
-3. Set up SSL certificate
-4. Configure database settings
-5. Set up static files serving
-6. Deploy backend to preferred hosting (e.g., AWS, DigitalOcean)
-7. Deploy frontend to Vercel or similar platform
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-[Add your chosen license here]
-
-## Contact
-
-[Your Name] - [your.email@example.com]
-
-Project Link: [https://github.com/[your-username]/django-full-auth](https://github.com/[your-username]/django-full-auth)
