@@ -50,8 +50,8 @@ A comprehensive authentication system built with Django REST Framework and NextJ
 
 1. Clone the repository
 ```bash
-git clone https://github.com/Tharindu1527/django-full-auth.git
-cd django-full-auth
+git clone https://github.com/Tharindu1527/Full-Authentication-Django-.git
+cd Full-Authentication-Django-
 ```
 
 2. Create and activate virtual environment
